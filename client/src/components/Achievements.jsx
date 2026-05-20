@@ -38,14 +38,14 @@ const Achievements = () => {
         title: "Class Topper",
         desc: "Secured top academic performance with consistent excellence and outstanding results.",
         certificate: [
-          {ach2},
-          {ach3},
+          ach2,
+          ach3,
         ],
       },
       {
         title: "DigiVenture - Second Prize",
         desc: "Won second prize and a cash award of ₹500 in DigiVenture (held at KPRIET), where participants had to design and develop a website within just 15 minutes.",
-        certificate: {ach1},
+        certificate: ach1,
         projectLink: "https://your-project-link.com",
       },
     ],
@@ -54,22 +54,22 @@ const Achievements = () => {
       {
         title: "Full Stack Web Development",
         desc: "Gained an overall knowledge about frontend, backend and database management systems.",
-        certificate: {cou2},
+        certificate: cou2,
       },
       {
         title: "Python for Beginners",
         desc: "Gained a knowledge in python basics and OOPs concepts.",
-        certificate: {cou4},
+        certificate: cou4,
       },
       {
         title: "UI/UX for Beginners",
         desc: "Learnt the fundamentals of UI/UX Design.",
-        certificate: {cou5},
+        certificate: cou5,
       },
       {
         title: "Data Analytics",
         desc: "Gained a knowledge on datas are manipulated and converted into interactive dashboards for effective analysis.",
-        certificate: {cou1},
+        certificate: cou1,
       },
     ],
 
@@ -77,32 +77,32 @@ const Achievements = () => {
       {
         title: "Data Driven IT Sectors",
         desc: "Understood how the datas are managed in IT sectors.",
-        certificate: {cert3},
+        certificate: cert3,
       },
       {
         title: "Emerging AI Technologies",
         desc: "Attended a workshop in KPRIET and had a knowlege about how AI rules the IT sectors.",
-        certificate: {cert7},
+        certificate: cert7,
       },
       {
         title: "Build Your Brand, Land Your Job - Code Create Connect",
         desc: "Attended an effective skillcamp on how to start a career in FSD.",
-        certificate: {cert1},
+        certificate: cert1,
       },
       {
         title: "AI for Students: Build Your Own GenAI Model",
         desc: "Made a part in a workshop which equipped the skills in this AI era.",
-        certificate: {cert6},
+        certificate: cert6,
       },
       {
         title: "ProjectXpress",
         desc: "Presented our IoT project 'AI-Based Predictive Fire Prevention System' in KPRIET.",
-        certificate: {cert8},
+        certificate: cert8,
       },
       {
         title: "Error Makes Clever - 3D Webinar",
         desc: "Had a hands-on training in this webinar where I build a LinkedIn landing page with AI tools.",
-        certificate: {cert4},
+        certificate: cert4,
       },
     ],
   };

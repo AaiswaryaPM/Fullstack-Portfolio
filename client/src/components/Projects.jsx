@@ -34,7 +34,7 @@ const Projects = () => {
       description:
         "A responsive, single-page calculator application built with native script logic. Features comprehensive arithmetic parsing, invalid operation safety guards, and an interactive layout switching dynamically between theme states.",
       image:
-        {pro1},
+        pro1,
       tech: ["HTML", "CSS", "JavaScript", "Canvas API", "QRCode.js"],
       github: "https://github.com/AaiswaryaPM/CODSOFT/tree/main/Task-3-Calculator",
       live: "https://aaiswaryapm.github.io/CODSOFT/Task-3-Calculator/",
@@ -45,7 +45,7 @@ const Projects = () => {
       description:
         "A responsive event registration platform engineered with vanilla script to handle event curation and sorting. It utilizes dynamic canvas rendering and external API integrations to deliver an automated, offline pass-download experience.",
       image:
-        {pro5},
+        pro5,
       tech: ["HTML", "CSS", "Vanilla JavaScript", "Canvas API", "QR Server API"],
       github: "https://github.com/AaiswaryaPM/TicketGen",
       live: "https://aaiswaryapm.github.io/TicketGen/",
@@ -56,7 +56,7 @@ const Projects = () => {
       description:
         "A browser-based graphic design tool for regional newspaper graphics. Features photo manipulation, auto-sizing typography to prevent overflow, and a custom state history stack for high-resolution exports.",
       image:
-        {pro2},
+        pro2,
       tech: ["HTML", "CSS", "Vanilla JavaScript", "Google Fonts API", "FileReader API", "html2canvas"],
       github: "https://github.com/AaiswaryaPM/Sakkraviyugam-news-poster-generator",
       live: "https://aaiswaryapm.github.io/Sakkraviyugam-news-poster-generator/",
@@ -67,7 +67,7 @@ const Projects = () => {
       description:
         "A logic-driven group ledger optimized for INR formats. It processes Equal, Exact, and Percentage splits, running a custom debt-minimization algorithm that computes the shortest transaction path to settle balances efficiently.",
       image:
-        {pro4},
+        pro4,
       tech: ["React.js", "Vite", "Tailwind CSS", "Git"],
       github: "https://github.com/AaiswaryaPM/Splitwise-Settlement-Engine",
       live: "https://aaiswaryapm.github.io/Splitwise-Settlement-Engine/",
