@@ -1,5 +1,5 @@
 // Hero.jsx
-import profile from "src/assets/profile.png"
+import profileImg from "src/assets/profile.png"
 import { motion } from "framer-motion";
 
 import {
@@ -141,7 +141,7 @@ const Hero = () => {
             >
 
               <img
-                src={profile}
+                src={profileImg}
                 alt="Profile"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
