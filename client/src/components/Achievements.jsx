@@ -7,7 +7,7 @@ import cert2 from "../assets/certificates/cicd-cert.jpg";
 import cert3 from "../assets/certificates/data-driven-it-sec-cert.jpg";
 import cert4 from "../assets/certificates/emc-3d-webinar.jpg";
 import cert5 from "../assets/certificates/fsd-intern-cert.jpg";
-import cert6 from "../assets/certificates/genai-ert.jpg";
+import cert6 from "../assets/certificates/genai-cert.jpg";
 import cert7 from "../assets/certificates/kpr-cert.jpg";
 import cert8 from "../assets/certificates/kpr-projectxpress.jpg";
 import cou1 from "../assets/courses/da-ert.jpg";
