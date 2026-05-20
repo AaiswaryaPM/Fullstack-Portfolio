@@ -1,5 +1,6 @@
 // Hero.jsx
-import profileImg from "../assets/profile.png"
+import profileImg from "../assets/profile.png";
+import resume from "../assets/Aaiswarya_PM_Resume.pdf";
 import { motion } from "framer-motion";
 
 import {
@@ -62,7 +63,7 @@ const Hero = () => {
 
             {/* Resume Button */}
             <a
-              href="/src/assets/Aaiswarya_PM_Resume.pdf"
+              href={resume}
               download
               className="px-6 sm:px-7 py-3 rounded-xl border border-purple-400 text-purple-700 dark:text-purple-300 dark:border-purple-500 font-semibold backdrop-blur-md bg-white/20 dark:bg-white/10 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-all duration-300"
             >

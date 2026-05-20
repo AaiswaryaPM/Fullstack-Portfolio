@@ -1,4 +1,20 @@
 // Achievements.jsx
+import ach1 from "../assets/Achievements/DigiVenture Award.png";
+import ach2 from "../assets/Achievements/Topper Award.jpg";
+import ach3 from "../assets/Achievements/Topper Cert.jpg";
+import cert1 from "../assets/Certificates/Build Your Brand Cert.jpg";
+import cert2 from "../assets/Certificates/CICD Cert.jpg";
+import cert3 from "../assets/Certificates/Data Driven IT Sec Cert.jpg";
+import cert4 from "../assets/Certificates/EMC 3D Webinar.jpg";
+import cert5 from "../assets/Certificates/FSD Intern Cert.jpg";
+import cert6 from "../assets/Certificates/GenAi Cert.jpg";
+import cert7 from "../assets/Certificates/KPR Cert.jpg";
+import cert8 from "../assets/Certificates/KPR ProjectXpress.jpg";
+import cou1 from "../assets/Courses/DA Cert.jpg";
+import cou2 from "../assets/Courses/FSD Cert.jpg";
+import cou3 from "../assets/Courses/Graphic Design Cert.jpg";
+import cou4 from "../assets/Courses/Python Cert.jpg";
+import cou5 from "../assets/Courses/UIUX Cert.jpg";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -22,14 +38,14 @@ const Achievements = () => {
         title: "Class Topper",
         desc: "Secured top academic performance with consistent excellence and outstanding results.",
         certificate: [
-          "/src/assets/Achievements/Topper Award.jpg",
-          "/src/assets/Achievements/Topper Cert.jpg",
+          {ach2},
+          {ach3},
         ],
       },
       {
         title: "DigiVenture - Second Prize",
         desc: "Won second prize and a cash award of ₹500 in DigiVenture (held at KPRIET), where participants had to design and develop a website within just 15 minutes.",
-        certificate: "/src/assets/Achievements/DigiVenture Award.png",
+        certificate: {ach1},
         projectLink: "https://your-project-link.com",
       },
     ],
@@ -38,22 +54,22 @@ const Achievements = () => {
       {
         title: "Full Stack Web Development",
         desc: "Gained an overall knowledge about frontend, backend and database management systems.",
-        certificate: "/src/assets/Courses/FSD Cert.jpg",
+        certificate: {cou2},
       },
       {
         title: "Python for Beginners",
         desc: "Gained a knowledge in python basics and OOPs concepts.",
-        certificate: "/src/assets/Courses/Python Cert.jpg",
+        certificate: {cou4},
       },
       {
         title: "UI/UX for Beginners",
         desc: "Learnt the fundamentals of UI/UX Design.",
-        certificate: "/src/assets/Courses/Python Cert.jpg",
+        certificate: {cou5},
       },
       {
         title: "Data Analytics",
         desc: "Gained a knowledge on datas are manipulated and converted into interactive dashboards for effective analysis.",
-        certificate: "/src/assets/Courses/DA Cert.jpg",
+        certificate: {cou1},
       },
     ],
 
@@ -61,32 +77,32 @@ const Achievements = () => {
       {
         title: "Data Driven IT Sectors",
         desc: "Understood how the datas are managed in IT sectors.",
-        certificate: "/src/assets/Certificates/Data Driven IT Sec Cert.jpg",
+        certificate: {cert3},
       },
       {
         title: "Emerging AI Technologies",
         desc: "Attended a workshop in KPRIET and had a knowlege about how AI rules the IT sectors.",
-        certificate: "/src/assets/Certificates/KPR Cert.jpg",
+        certificate: {cert7},
       },
       {
         title: "Build Your Brand, Land Your Job - Code Create Connect",
         desc: "Attended an effective skillcamp on how to start a career in FSD.",
-        certificate: "/src/assets/Certificates/Build Your Brand Cert.jpg",
+        certificate: {cert1},
       },
       {
         title: "AI for Students: Build Your Own GenAI Model",
         desc: "Made a part in a workshop which equipped the skills in this AI era.",
-        certificate: "/src/assets/Certificates/GenAi Cert.jpg",
+        certificate: {cert6},
       },
       {
         title: "ProjectXpress",
         desc: "Presented our IoT project 'AI-Based Predictive Fire Prevention System' in KPRIET.",
-        certificate: "/src/assets/Certificates/KPR ProjectXpress Cert.jpg",
+        certificate: {cert8},
       },
       {
         title: "Error Makes Clever - 3D Webinar",
         desc: "Had a hands-on training in this webinar where I build a LinkedIn landing page with AI tools.",
-        certificate: "/src/assets/Certificates/EMC 3D Webinar.jpg",
+        certificate: {cert4},
       },
     ],
   };

@@ -1,4 +1,5 @@
 // About.jsx
+import internCert from "../assets/CodSoft Intern Cert.jpg";
 
 import { motion } from "framer-motion";
 
@@ -227,7 +228,7 @@ const About = () => {
 
                 {/* VIEW CERTIFICATE */}
                 <a
-                  href="/src/assets/CodSoft Intern Cert.jpg"
+                  href={internCert}
                   target="_blank"
                   rel="noreferrer"
                   className="w-14 h-14 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center text-xl shadow-lg hover:scale-110 transition-all duration-300"
