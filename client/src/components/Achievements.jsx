@@ -1,20 +1,20 @@
 // Achievements.jsx
-import ach1 from "../assets/Achievements/DigiVenture Award.png";
-import ach2 from "../assets/Achievements/Topper Award.jpg";
-import ach3 from "../assets/Achievements/Topper Cert.jpg";
-import cert1 from "../assets/Certificates/Build Your Brand Cert.jpg";
-import cert2 from "../assets/Certificates/CICD Cert.jpg";
-import cert3 from "../assets/Certificates/Data Driven IT Sec Cert.jpg";
-import cert4 from "../assets/Certificates/EMC 3D Webinar.jpg";
-import cert5 from "../assets/Certificates/FSD Intern Cert.jpg";
-import cert6 from "../assets/Certificates/GenAi Cert.jpg";
-import cert7 from "../assets/Certificates/KPR Cert.jpg";
-import cert8 from "../assets/Certificates/KPR ProjectXpress.jpg";
-import cou1 from "../assets/Courses/DA Cert.jpg";
-import cou2 from "../assets/Courses/FSD Cert.jpg";
-import cou3 from "../assets/Courses/Graphic Design Cert.jpg";
-import cou4 from "../assets/Courses/Python Cert.jpg";
-import cou5 from "../assets/Courses/UIUX Cert.jpg";
+import ach1 from "../assets/achievements/digiventure-award.png";
+import ach2 from "../assets/achievements/topper-award.jpg";
+import ach3 from "../assets/achievements/topper-cert.jpg";
+import cert1 from "../assets/certificates/build-your-brand-cert.jpg";
+import cert2 from "../assets/certificates/cicd-cert.jpg";
+import cert3 from "../assets/certificates/data-driven-it-sec-cert.jpg";
+import cert4 from "../assets/certificates/emc-3d-webinar.jpg";
+import cert5 from "../assets/certificates/fsd-intern-cert.jpg";
+import cert6 from "../assets/certificates/genai-ert.jpg";
+import cert7 from "../assets/certificates/kpr-cert.jpg";
+import cert8 from "../assets/certificates/kpr-projectxpress.jpg";
+import cou1 from "../assets/courses/da-ert.jpg";
+import cou2 from "../assets/courses/fsd-cert.jpg";
+import cou3 from "../assets/courses/graphic-design-cert.jpg";
+import cou4 from "../assets/courses/python-cert.jpg";
+import cou5 from "../assets/courses/uiux-cert.jpg";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
