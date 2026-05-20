@@ -1,5 +1,5 @@
 // Contact.jsx
-import resume from "../assets/Aaiswarya_PM_Resume.pdf";
+import resumePdf from "../assets/Aaiswarya_PM_Resume.pdf";
 import axios from "axios";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -203,7 +203,7 @@ const Contact = () => {
 
               {/* Resume Button */}
               <a
-                href={resume}
+                href={resumePdf}
                 download
                 className="inline-block w-fit mt-10 px-7 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-300 relative z-10"
               >
