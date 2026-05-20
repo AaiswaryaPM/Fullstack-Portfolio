@@ -10,7 +10,7 @@ import cert5 from "../assets/certificates-img/fsd-intern-cert.jpg";
 import cert6 from "../assets/certificates-img/genai-cert.jpg";
 import cert7 from "../assets/certificates-img/kpr-cert.jpg";
 import cert8 from "../assets/certificates-img/kpr-projectxpress.jpg";
-import cou1 from "../assets/courses-img/da-ert.jpg";
+import cou1 from "../assets/courses-img/da-cert.jpg";
 import cou2 from "../assets/courses-img/fsd-cert.jpg";
 import cou3 from "../assets/courses-img/graphic-design-cert.jpg";
 import cou4 from "../assets/courses-img/python-cert.jpg";
