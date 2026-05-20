@@ -1,20 +1,20 @@
 // Achievements.jsx
-import ach1 from "../assets/achievements/digiventure-award.png";
-import ach2 from "../assets/achievements/topper-award.jpg";
-import ach3 from "../assets/achievements/topper-cert.jpg";
-import cert1 from "../assets/certificates/build-your-brand-cert.jpg";
-import cert2 from "../assets/certificates/cicd-cert.jpg";
-import cert3 from "../assets/certificates/data-driven-it-sec-cert.jpg";
-import cert4 from "../assets/certificates/emc-3d-webinar.jpg";
-import cert5 from "../assets/certificates/fsd-intern-cert.jpg";
-import cert6 from "../assets/certificates/genai-cert.jpg";
-import cert7 from "../assets/certificates/kpr-cert.jpg";
-import cert8 from "../assets/certificates/kpr-projectxpress.jpg";
-import cou1 from "../assets/courses/da-ert.jpg";
-import cou2 from "../assets/courses/fsd-cert.jpg";
-import cou3 from "../assets/courses/graphic-design-cert.jpg";
-import cou4 from "../assets/courses/python-cert.jpg";
-import cou5 from "../assets/courses/uiux-cert.jpg";
+import ach1 from "../assets/achievements-img/digiventure-award.png";
+import ach2 from "../assets/achievements-img/topper-award.jpg";
+import ach3 from "../assets/achievements-img/topper-cert.jpg";
+import cert1 from "../assets/certificates-img/build-your-brand-cert.jpg";
+import cert2 from "../assets/certificates-img/cicd-cert.jpg";
+import cert3 from "../assets/certificates-img/data-driven-it-sec-cert.jpg";
+import cert4 from "../assets/certificates-img/emc-3d-webinar.jpg";
+import cert5 from "../assets/certificates-img/fsd-intern-cert.jpg";
+import cert6 from "../assets/certificates-img/genai-cert.jpg";
+import cert7 from "../assets/certificates-img/kpr-cert.jpg";
+import cert8 from "../assets/certificates-img/kpr-projectxpress.jpg";
+import cou1 from "../assets/courses-img/da-ert.jpg";
+import cou2 from "../assets/courses-img/fsd-cert.jpg";
+import cou3 from "../assets/courses-img/graphic-design-cert.jpg";
+import cou4 from "../assets/courses-img/python-cert.jpg";
+import cou5 from "../assets/courses-img/uiux-cert.jpg";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
