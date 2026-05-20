@@ -33,6 +33,8 @@ export const sendMessage = async (req, res) => {
         rejectUnauthorized: false,
       },
     });
+    await transporter.verify();
+    console.log("SMTP Server is ready");
 
     // ==========================
     // MAIL TO YOU
