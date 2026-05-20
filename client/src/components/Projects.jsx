@@ -1,5 +1,5 @@
 // Projects.jsx
-import pro1 from "../assets/calculator.png";
+import pro1 from "../assets/profile.png";
 import pro2 from "../assets/dynamic-news-poster-editor.png";
 import pro3 from "../assets/personal-portfolio.png";
 import pro4 from "../assets/splitwise.png";
