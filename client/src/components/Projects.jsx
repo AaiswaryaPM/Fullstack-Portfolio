@@ -1,9 +1,9 @@
 // Projects.jsx
-import pro1 from "../assets/profile.png";
-import pro2 from "../assets/dynamic-news-poster-editor.png";
-import pro3 from "../assets/personal-portfolio.png";
-import pro4 from "../assets/splitwise.png";
-import pro5 from "../assets/ticketgen.png";
+import pro1 from "../assets/Projects/calculator.png";
+import pro2 from "../assets/Projects/dynamic-news-poster-editor.png";
+import pro3 from "../assets/Projects/personal-portfolio.png";
+import pro4 from "../assets/Projects/splitwise.png";
+import pro5 from "../assets/Projects/ticketgen.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -23,7 +23,7 @@ const Projects = () => {
       description:
         "A sleek, fully responsive developer portfolio built to showcase personal projects, skills, and certifications. It features a modern user interface enhanced with subtle glassmorphism layouts and an integrated theme toggle.",
       image:
-        {pro3},
+        pro3,
       tech: ["HTML", "Tailwind CSS", "JavaScript"],
       github: "https://github.com/AaiswaryaPM/CODSOFT/tree/main/Task-1-Portfolio",
       live: "https://aaiswaryapm.github.io/CODSOFT/Task-1-Portfolio/",

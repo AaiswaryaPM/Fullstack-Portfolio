@@ -1,20 +1,20 @@
 // Achievements.jsx
-import ach1 from "../assets/digiventure-award.png";
-import ach2 from "../assets/topper-award.jpg";
-import ach3 from "../assets/topper-cert.jpg";
-import cert1 from "../assets/build-your-brand-cert.jpg";
-import cert2 from "../assets/cicd-cert.jpg";
-import cert3 from "../assets/data-driven-it-sec-cert.jpg";
-import cert4 from "../assets/emc-3d-webinar.jpg";
-import cert5 from "../assets/fsd-intern-cert.jpg";
-import cert6 from "../assets/genai-cert.jpg";
-import cert7 from "../assets/kpr-cert.jpg";
-import cert8 from "../assets/kpr-projectxpress.jpg";
-import cou1 from "../assets/da-cert.jpg";
-import cou2 from "../assets/fsd-cert.jpg";
-import cou3 from "../assets/graphic-design-cert.jpg";
-import cou4 from "../assets/python-cert.jpg";
-import cou5 from "../assets/uiux-cert.jpg";
+import ach1 from "../assets/Achievements/digiventure-award.png";
+import ach2 from "../assets/Achievements/topper-award.jpg";
+import ach3 from "../assets/Achievements/topper-cert.jpg";
+import cert1 from "../assets/Certificates/build-your-brand-cert.jpg";
+import cert2 from "../assets/Certificates/cicd-cert.jpg";
+import cert3 from "../assets/Certificates/data-driven-it-sec-cert.jpg";
+import cert4 from "../assets/Certificates/emc-3d-webinar.jpg";
+import cert5 from "../assets/Certificates/fsd-intern-cert.jpg";
+import cert6 from "../assets/Certificates/genai-cert.jpg";
+import cert7 from "../assets/Certificates/kpr-cert.jpg";
+import cert8 from "../assets/Certificates/kpr-projectxpress.jpg";
+import cou1 from "../assets/Courses/da-cert.jpg";
+import cou2 from "../assets/Courses/fsd-cert.jpg";
+import cou3 from "../assets/Courses/graphic-design-cert.jpg";
+import cou4 from "../assets/Courses/python-cert.jpg";
+import cou5 from "../assets/Courses/uiux-cert.jpg";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
