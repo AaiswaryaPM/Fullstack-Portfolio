@@ -1,9 +1,9 @@
 // Projects.jsx
-import pro1 from "../assets/projects-img/calculator.png";
-import pro2 from "../assets/projects-img/dynamic-news-poster-editor.png";
-import pro3 from "../assets/projects-img/personal-portfolio.png";
-import pro4 from "../assets/projects-img/splitwise.png";
-import pro5 from "../assets/projects-img/ticketgen.png";
+import pro1 from "../assets/calculator.png";
+import pro2 from "../assets/dynamic-news-poster-editor.png";
+import pro3 from "../assets/personal-portfolio.png";
+import pro4 from "../assets/splitwise.png";
+import pro5 from "../assets/ticketgen.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
