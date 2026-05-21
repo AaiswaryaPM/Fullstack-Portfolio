@@ -13,7 +13,7 @@ export const sendMessage = async (req, res) => {
     const newMessage = new Contact({
       name,
       email,
-     message,
+      message,
     });
 
     await newMessage.save();
@@ -22,22 +22,15 @@ export const sendMessage = async (req, res) => {
 
     // Nodemailer Transport
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
 
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
-
-      connectionTimeout: 10000,
-      greetingTimeout: 10000,
-      socketTimeout: 10000,
     });
-
-    // Verify Transporter
-    await transporter.verify();
-
-    console.log("SMTP Server Connected");
 
     // ==========================
     // MAIL TO YOU
@@ -159,12 +152,8 @@ export const sendMessage = async (req, res) => {
     console.log("Sending admin email...");
     await transporter.sendMail(adminMailOptions);
 
-    console.log("Admin email sent");
-
     console.log("Sending user confirmation email...");
     await transporter.sendMail(userMailOptions);
-
-    console.log("User confirmation email sent");
 
     console.log("Emails sent successfully");
 
@@ -179,7 +168,7 @@ export const sendMessage = async (req, res) => {
 
     res.status(500).json({
       success: false,
-      message: error.message || "Server Error",
+      message: "Server Error",
     });
 
   }
