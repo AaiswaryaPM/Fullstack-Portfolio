@@ -72,7 +72,7 @@ const Contact = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "https://portfolio-backend-6bt3.onrender.com",
+        "https://portfolio-backend-6bt3.onrender.com/api/contact",
         formData
       );
 
