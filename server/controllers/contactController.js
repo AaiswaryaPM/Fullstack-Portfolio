@@ -20,6 +20,9 @@ export const sendMessage = async (req, res) => {
 
     console.log("Saved to MongoDB");
 
+    await transporter.verify();
+    console.log("SMTP Connected");
+    
     // Nodemailer Transport
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
