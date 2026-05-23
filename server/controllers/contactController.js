@@ -21,12 +21,21 @@ export const sendMessage = async (req, res) => {
     console.log("Saved to MongoDB");
 
     // Nodemailer Transport
+    // Nodemailer Transport - Optimized for Render + Gmail
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false, // Must be false for port 587
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      tls: {
+        rejectUnauthorized: false, // Bypasses local network routing restrictions
+        ciphers: "SSLv3",          // Forces a compatible security standard
+      },
+      connectionTimeout: 10000,    // 10 seconds timeout limit
+      greetingTimeout: 10000,
     });
 
     // ==========================
