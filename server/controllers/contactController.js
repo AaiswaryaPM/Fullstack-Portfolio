@@ -159,10 +159,6 @@ export const sendMessage = async (req, res) => {
       message: "Message sent successfully",
     });
 
-    // email in background
-    transporter.sendMail(adminMailOptions).catch(console.error);
-    transporter.sendMail(userMailOptions).catch(console.error);
-
   } catch (error) {
 
     console.log("EMAIL ERROR:", error);
