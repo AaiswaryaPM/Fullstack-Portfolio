@@ -21,18 +21,11 @@ export const sendMessage = async (req, res) => {
     console.log("Saved to MongoDB");
 
     // Nodemailer Transport
-    // Nodemailer Transport - Fixed for Render IPv6 Network Bug
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // false for port 587
-      family: 4,     // <--- CRITICAL: Forces Nodemailer to use IPv4 only
+      service: "gmail",
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
-      },
-      tls: {
-        rejectUnauthorized: false,
       },
     });
 
