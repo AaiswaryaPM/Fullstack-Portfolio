@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 import express from "express";
 import cors from "cors";
 

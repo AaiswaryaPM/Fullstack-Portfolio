@@ -1,10 +1,10 @@
 import Contact from "../models/Contact.js";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendMessage = async (req, res) => {
-
   try {
-
     const { name, email, message } = req.body;
 
     console.log("New Contact Request Received");
@@ -20,24 +20,15 @@ export const sendMessage = async (req, res) => {
 
     console.log("Saved to MongoDB");
 
-    // Nodemailer Transport
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
     // ==========================
     // MAIL TO YOU
     // ==========================
 
-    const adminMailOptions = {
-      from: `"Portfolio Contact Form" <${process.env.EMAIL_USER}>`,
-      replyTo: email,
-      to: process.env.EMAIL_USER,
+    console.log("Sending admin email...");
 
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      to: process.env.ADMIN_EMAIL,
       subject: `✨ New Portfolio Inquiry from ${name}`,
 
       html: `
@@ -67,16 +58,17 @@ export const sendMessage = async (req, res) => {
 
         </div>
       `,
-    };
+    });
 
     // ==========================
     // AUTO REPLY TO USER
     // ==========================
 
-    const userMailOptions = {
-      from: `"Aaiswarya PM" <${process.env.EMAIL_USER}>`,
-      to: email,
+    console.log("Sending user confirmation email...");
 
+    await resend.emails.send({
+      from: "Aaiswarya PM <onboarding@resend.dev>",
+      to: email,
       subject: "🚀 Your Message Has Been Successfully Received",
 
       html: `
@@ -143,14 +135,7 @@ export const sendMessage = async (req, res) => {
 
         </div>
       `,
-    };
-
-    // Send Both Emails
-    console.log("Sending admin email...");
-    await transporter.sendMail(adminMailOptions);
-
-    console.log("Sending user confirmation email...");
-    await transporter.sendMail(userMailOptions);
+    });
 
     console.log("Emails sent successfully");
 
@@ -169,5 +154,4 @@ export const sendMessage = async (req, res) => {
     });
 
   }
-
 };
