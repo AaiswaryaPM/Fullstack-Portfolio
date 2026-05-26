@@ -26,7 +26,7 @@ export const sendMessage = async (req, res) => {
     console.log("Sending admin email...");
 
     const adminResponse = await resend.emails.send({
-      from: process.env.MAIL_FROM,
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: process.env.MY_EMAIL,
       replyTo: email,
       subject: `✨ New Portfolio Inquiry from ${name}`,
@@ -52,7 +52,7 @@ export const sendMessage = async (req, res) => {
     console.log("Sending user auto-reply email...");
 
     const userResponse = await resend.emails.send({
-      from: process.env.MAIL_FROM,
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: email,
       subject: "🚀 Your Message Has Been Received",
       html: `
