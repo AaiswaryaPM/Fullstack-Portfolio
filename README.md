@@ -7,7 +7,7 @@ It also includes interactive features like a **Word Scramble Game** and a fully 
 
 ## 🌐 Live Project
 
-🔗 https://fullstack-portfolio-mu-puce.vercel.app/
+🔗 **[Aaiswarya PM](https://fullstack-portfolio-mu-puce.vercel.app/)**
 
 ---
 
