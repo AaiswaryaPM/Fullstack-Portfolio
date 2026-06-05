@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import rateLimit from "express-rate-limiter";
+import rateLimit from "express-rate-limit";
 import express from "express";
 import cors from "cors";
 
