@@ -68,11 +68,11 @@ The contact form is fully functional and integrated with **Resend Email Service*
 
 ---
 
-### 🔒 Security & Backend Enhancements
+## 🔒 Security & Backend Enhancements
 
 To improve application security, reliability, and data integrity, the backend implements multiple protection layers.
 
-## ✅ Server-Side Validation
+### ✅ Server-Side Validation
 
 The backend validates all incoming contact form data before processing:
 
@@ -104,13 +104,9 @@ Protected against:
 
 Example:
 
-Before:
+Before: ```<script>alert("hack")</script>```
 
-```<script>alert("hack")</script>```
-
-After Sanitization:
-
-```scriptalert("hack")/script```
+After Sanitization: ```scriptalert("hack")/script```
 
 ---
 
@@ -126,10 +122,12 @@ Current Configuration:
 
 If the limit is exceeded:
 
-```{
+```json
+{
   "success": false,
   "message": "Too many requests. Please try again later."
-}```
+}
+```
 
 Benefits:
 
@@ -140,41 +138,55 @@ Benefits:
 
 ---
 
-### 📖 API Documentation
+## 📖 API Documentation
 
 The backend API is documented using Swagger (OpenAPI Specification).
 
-## Available Endpoint
-**POST /api/contact**
+### Swagger UI
 
-Accepts:
+🔗 https://portfolio-backend-acqk.onrender.com/api-docs
 
-```{
+### Available Endpoint
+```http
+POST /api/contact
+```
+
+#### Request Body
+
+```json
+{
   "name": "John Doe",
   "email": "john@example.com",
   "message": "Hello, I would like to connect with you."
-}```
+}
+```
 
-Success Response:
+#### Success Response (200)
 
-```{
+```json
+{
   "success": true,
   "message": "Message sent successfully"
-}```
+}
+```
 
-Validation Error Response:
+#### Validation Error Response (400)
 
-```{
+```json
+{
   "success": false,
   "message": "Invalid email"
-}```
+}
+```
 
-Server Error Response:
+#### Server Error Response (500)
 
-```{
+```json
+{
   "success": false,
   "message": "Server Error"
-}```
+}
+```
 
 Swagger UI provides:
 
@@ -185,39 +197,57 @@ Swagger UI provides:
 
 ---
 
-### ⚙️ Environment Variables
+## ⚙️ Environment Variables
 
 Backend requires the following environment variables:
 
-```MONGODB_URI=your_mongodb_connection_string
+```
+MONGODB_URI=your_mongodb_connection_string
 RESEND_API_KEY=your_resend_api_key
 MY_EMAIL=your_email_address
 PORT=5000
 ```
 ---
 
-### 🏗️ System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
-graph TD
-    A[React Frontend] --> B[Axios API Requests]
-    B --> C[Express Backend]
-    C --> D[Server-Side Validation]
-    D --> E[Input Sanitization]
-    E --> F[Rate Limiting]
-    F --> G[MongoDB Atlas]
-    G --> H[Resend Email Service]
-    H --> I[Owner Notification + User Auto Reply]
+flowchart LR
 
-    style A fill:#61DAFB,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#333,stroke:#61DAFB,stroke-width:2px,color:#fff
-    style G fill:#47A248,stroke:#333,stroke-width:2px,color:#fff
-    style H fill:#000,stroke:#fff,stroke-width:2px,color:#fff
+    A["🎨 React Frontend<br/>Portfolio UI"] --> B["📡 Axios API Requests"]
+
+    B --> C["🚀 Express.js Backend"]
+
+    subgraph Security Layer
+        D["✅ Server-Side Validation"]
+        E["🛡️ Input Sanitization"]
+        F["⏱️ Rate Limiting"]
+    end
+
+    C --> D
+    D --> E
+    E --> F
+
+    F --> G["🍃 MongoDB Atlas<br/>Data Storage"]
+
+    G --> H["📧 Resend Email API"]
+
+    H --> I["👤 Portfolio Owner"]
+
+    style A fill:#61DAFB,color:#000,stroke:#0A0A0A,stroke-width:2px
+    style B fill:#A855F7,color:#fff,stroke:#0A0A0A,stroke-width:2px
+    style C fill:#111827,color:#fff,stroke:#61DAFB,stroke-width:2px
+    style D fill:#22C55E,color:#fff,stroke:#0A0A0A,stroke-width:2px
+    style E fill:#F59E0B,color:#fff,stroke:#0A0A0A,stroke-width:2px
+    style F fill:#EF4444,color:#fff,stroke:#0A0A0A,stroke-width:2px
+    style G fill:#47A248,color:#fff,stroke:#0A0A0A,stroke-width:2px
+    style H fill:#000000,color:#fff,stroke:#FFFFFF,stroke-width:2px
+    style I fill:#8B5CF6,color:#fff,stroke:#0A0A0A,stroke-width:2px
 ```
 
 ---
 
-### 🎯 Key Concepts Demonstrated
+## 🎯 Key Concepts Demonstrated
 
 - REST API Development
 - Client-Server Architecture
@@ -236,7 +266,7 @@ graph TD
 
 ---
 
-### 👩‍💻 Author
+## 👩‍💻 Author
 
 **Aaiswarya PM**
 
