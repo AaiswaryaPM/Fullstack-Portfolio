@@ -97,7 +97,7 @@ const Contact = () => {
 
       console.log(error);
 
-      setPopup("Failed to send message");
+      setPopup(error.response?.data?.message || "Failed to send message");
 
       setLoading(false);
     }
