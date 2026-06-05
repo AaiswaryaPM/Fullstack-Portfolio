@@ -7,6 +7,53 @@ export const sendMessage = async (req, res) => {
 
     console.log("New Contact Request Received");
 
+    // ==========================
+    // SERVER SIDE VALIDATION
+    // ==========================
+
+    if (!name || !email || !message) {
+      return res.status(400).json({
+        success: false,
+        message: "All fields are required",
+      });
+    }
+
+    // Remove extra spaces
+    name = name.trim();
+    email = email.trim();
+    message = message.trim();
+
+    // Name Validation
+    if (name.length < 2 || name.length > 50) {
+      return res.status(400).json({
+        success: false,
+        message: "Name must be between 2 and 50 characters",
+      });
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid email",
+      });
+    }
+
+    // Message validation
+    if (message.length < 10 ||message.length > 1000) {
+      return res.status(400).json({
+        success: false,
+        message: "Message must be between 10 and 1000 characters"
+      });
+    }
+
+    // Basic Sanitization
+    name = name.replace(/[<>]/g, "");
+    email = email.replace(/[<>]/g, "");
+    message = message.replace(/[<>]/g, "");
+
     // Save to MongoDB
     const newMessage = new Contact({
       name,

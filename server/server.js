@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-// import nodemailer from "nodemailer";
+import rateLimit from "express-rate-limiter";
 import express from "express";
 import cors from "cors";
 
@@ -10,6 +10,16 @@ import connectDB from "./config/db.js";
 import contactRoutes from "./routes/contactRoutes.js";
 
 const app = express();
+
+// Rate Limiter
+const contactLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5,
+  message: {
+    success: false,
+    message: "Too many requests. Please try again later."
+  },
+});
 
 // Connect Database
 connectDB();
@@ -24,7 +34,7 @@ app.use(
 app.use(express.json());
 
 // Routes
-app.use("/api/contact", contactRoutes);
+app.use("/api/contact", contactLimiter, contactRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
