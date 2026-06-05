@@ -10,6 +10,7 @@ import connectDB from "./config/db.js";
 import contactRoutes from "./routes/contactRoutes.js";
 
 const app = express();
+app.set("trust proxy", 1);
 
 // Rate Limiter
 const contactLimiter = rateLimit({

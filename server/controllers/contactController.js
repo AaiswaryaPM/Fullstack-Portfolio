@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 export const sendMessage = async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    let { name, email, message } = req.body;
 
     console.log("New Contact Request Received");
 
