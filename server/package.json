@@ -13,7 +13,9 @@
     "express-rate-limit": "^8.5.2",
     "mongoose": "^8.18.0",
     "render": "^0.1.4",
-    "resend": "^6.12.4"
+    "resend": "^6.12.4",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

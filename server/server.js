@@ -1,3 +1,6 @@
+import swaggerUi from "swagger-ui-express";
+import swaggerSpec from "./config/swagger.js";
+
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -36,6 +39,11 @@ app.use(express.json());
 
 // Routes
 app.use("/api/contact", contactLimiter, contactRoutes);
+
+app.use("/api-docs", 
+  swaggerUi.serve, 
+  swaggerUi.setup(swaggerSpec)
+);
 
 // Test Route
 app.get("/", (req, res) => {
