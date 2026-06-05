@@ -5,9 +5,9 @@ const options = {
     openapi: "3.0.0",
 
     info: {
-      title: "Portfolio API",
+      title: "Aaiswarya PM Portfolio API Documentation",
       version: "1.0.0",
-      description: "API documentation for my portfolio backend",
+      description: "RESTful API documentation for the Full-Stack Portfolio application built using React, Express.js, MongoDB Atlas, and Resend Email Service.",
     },
 
     servers: [
