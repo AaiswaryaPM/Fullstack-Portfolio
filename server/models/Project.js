@@ -12,17 +12,17 @@ const projectSchema = new mongoose.Schema(
       required: true,
     },
 
-    techStack: {
+    tech: {
       type: [String],
       required: true,
     },
 
-    githubLink: {
+    github: {
       type: String,
       required: true,
     },
 
-    liveLink: {
+    live: {
       type: String,
       required: true,
     },
