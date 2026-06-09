@@ -10,6 +10,7 @@ import cors from "cors";
 
 import connectDB from "./config/db.js";
 
+import projectRoutes from "./routes/projectRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 
 const app = express();
@@ -38,6 +39,7 @@ app.use(
 app.use(express.json());
 
 // Routes
+app.use("/api/projects", projectRoutes);
 app.use("/api/contacts", contactLimiter, contactRoutes);
 
 app.use("/api-docs", 
