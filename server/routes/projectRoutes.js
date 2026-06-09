@@ -13,48 +13,14 @@ const router = express.Router();
 /**
  * @swagger
  * /api/projects:
- *   post:
- *     summary: Create a new project
- *     description: Adds a new project to the portfolio database
+ *   get:
+ *     summary: Get all projects
+ *     description: Returns all projects stored in MongoDB
  *     tags:
  *       - Projects
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required:
- *               - title
- *               - description
- *               - tech
- *               - github
- *               - live
- *               - image
- *             properties:
- *               title:
- *                 type: string
- *                 example: Portfolio Website
- *               description:
- *                 type: string
- *                 example: A full stack portfolio built using MERN stack
- *               tech:
- *                 type: array
- *                 items:
- *                   type: string
- *                 example: ["React", "Node.js", "MongoDB"]
- *               github:
- *                 type: string
- *                 example: https://github.com/username/project
- *               live:
- *                 type: string
- *                 example: https://project.vercel.app
- *               image:
- *                 type: string
- *                 example: https://res.cloudinary.com/demo/image.png
  *     responses:
- *       201:
- *         description: Project created successfully
+ *       200:
+ *         description: Successfully fetched projects
  *         content:
  *           application/json:
  *             schema:
@@ -64,25 +30,31 @@ const router = express.Router();
  *                   type: boolean
  *                   example: true
  *                 data:
- *                   type: object
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       _id:
+ *                         type: string
+ *                       title:
+ *                         type: string
+ *                       description:
+ *                         type: string
+ *                       tech:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       github:
+ *                         type: string
+ *                       live:
+ *                         type: string
+ *                       image:
+ *                         type: string
  *                 message:
  *                   type: string
- *                   example: Project created successfully
- *       400:
- *         description: Validation Error
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: false
- *                 message:
- *                   type: string
- *                   example: Missing required fields
+ *                   example: Projects fetched successfully
  *       500:
- *         description: Server Error
+ *         description: Server error
  */
 
 router.get("/", getProjects);
