@@ -1,7 +1,7 @@
 # 🚀 Personal Developer Portfolio
 
 A modern, fully responsive **developer portfolio website** built to showcase my projects, skills, and experience.  
-It also includes interactive features like a **Word Scramble Game** and a fully functional **Contact System powered by email automation**.
+It also includes interactive features like a **Word Scramble Game** and a fully functional **Contact System powered**.
 
 ---
 
@@ -149,6 +149,10 @@ The backend API is documented using Swagger (OpenAPI Specification).
 ### Available Endpoint
 ```http
 POST /api/contacts
+```
+
+```http
+GET /api/projects
 ```
 
 #### Request Body
