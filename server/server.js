@@ -38,7 +38,7 @@ app.use(
 app.use(express.json());
 
 // Routes
-app.use("/api/contact", contactLimiter, contactRoutes);
+app.use("/api/contacts", contactLimiter, contactRoutes);
 
 app.use("/api-docs", 
   swaggerUi.serve, 
