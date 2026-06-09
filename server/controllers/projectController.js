@@ -16,7 +16,7 @@ export const getProjects = async (req, res) => {
     return res.status(500).json({
       success: false,
       data: null,
-      message: "Server Error",
+      message: error.message,
     });
 
   }
@@ -38,7 +38,7 @@ export const createProject = async (req, res) => {
     return res.status(500).json({
       success: false,
       data: null,
-      message: "Server Error",
+      message: error.message,
     });
 
   }
@@ -67,7 +67,7 @@ export const updateProject = async (req, res) => {
     return res.status(500).json({
       success: false,
       data: null,
-      message: "Server Error",
+      message: error.message,
     });
 
   }
@@ -91,7 +91,7 @@ export const deleteProject = async (req, res) => {
     return res.status(500).json({
       success: false,
       data: null,
-      message: "Server Error",
+      message: error.message,
     });
 
   }
