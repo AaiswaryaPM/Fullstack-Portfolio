@@ -148,7 +148,7 @@ The backend API is documented using Swagger (OpenAPI Specification).
 
 ### Available Endpoint
 ```http
-POST /api/contact
+POST /api/contacts
 ```
 
 #### Request Body
