@@ -3,8 +3,8 @@ import Project from "../models/Project.js";
 export const getProjects = async (req, res) => {
   try {
 
-    const projects = await Project.find().select("-_id");
-
+    const projects = await Project.find().sort({ order: 1 }).select("-_id");
+    
     return res.status(200).json({
       success: true,
       data: projects,
