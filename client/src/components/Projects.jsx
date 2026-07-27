@@ -23,7 +23,11 @@ const Projects = () => {
           "https://portfolio-backend-acqk.onrender.com/api/projects"
         );
 
-        setProjects(response.data.data);
+        const rawData = response.data.data || response.data;
+
+        const sortedData = Array.isArray(rawData) ? rawData.sort((a, b) => (a.order || 0) - (b.order || 0)) : [];
+
+        setProjects(sortedData);
 
       } catch (error) {
 

@@ -1,5 +1,6 @@
 // About.jsx
 import internCert from "../assets/CodSoft Intern Cert.jpg";
+import appinCert from "../assets/Appin Tech Intern Cert.jpg";
 
 import { motion } from "framer-motion";
 
@@ -55,7 +56,7 @@ const About = () => {
               </h3>
 
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg mb-4">
-                I am a motivated and passionate developer currently pursuing a B.Tech in Agricultural Engineering (2nd year), with a strong interest in building a career in the IT industry.
+                I am a motivated and passionate developer currently pursuing a B.Tech in Agricultural Engineering (3rd year), with a strong interest in building a career in the IT industry.
               </p>
 
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
@@ -204,14 +205,14 @@ const About = () => {
             {/* INTERNSHIP BOX */}
             <div className="backdrop-blur-lg bg-white/20 dark:bg-white/10 border border-white/20 rounded-3xl shadow-xl p-6 hover:scale-[1.02] transition-all duration-300">
 
+              <h3 className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-6">
+                Internships
+              </h3>
+
+              {/* Internship 1 */}
               <div className="flex items-start justify-between gap-4">
 
                 <div>
-
-                  <h3 className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-                    Internship
-                  </h3>
-
                   <h4 className="text-lg font-semibold">
                     CODSOFT
                   </h4>
@@ -223,12 +224,40 @@ const About = () => {
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                     Duration: 1 Month
                   </p>
-
                 </div>
 
-                {/* VIEW CERTIFICATE */}
                 <a
                   href={internCert}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-14 h-14 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center text-xl shadow-lg hover:scale-110 transition-all duration-300"
+                >
+                  <FaEye />
+                </a>
+
+              </div>
+
+              <hr className="my-6 border-white/20" />
+
+              {/* Internship 2 */}
+              <div className="flex items-start justify-between gap-4">
+
+                <div>
+                  <h4 className="text-lg font-semibold">
+                    Appin Technology, Coimbatore
+                  </h4>
+
+                  <p className="text-gray-700 dark:text-gray-300 mt-1">
+                    MERN Stack Intern
+                  </p>
+
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                    Duration: 15 Days
+                  </p>
+                </div>
+
+                <a
+                  href={appinCert}
                   target="_blank"
                   rel="noreferrer"
                   className="w-14 h-14 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center text-xl shadow-lg hover:scale-110 transition-all duration-300"
@@ -263,7 +292,7 @@ const About = () => {
                   </p>
 
                   <p className="text-gray-700 dark:text-gray-300 mt-2">
-                    Erode Sengunthar Engineering College • CGPA(Till 2nd sem): 9.4
+                    Erode Sengunthar Engineering College • CGPA(Till 3rd sem): 9.4/10
                   </p>
 
                 </div>

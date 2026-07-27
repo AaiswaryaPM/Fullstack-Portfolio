@@ -45,9 +45,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-sm sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-            I build modern, responsive, and interactive web applications
-            using React, Tailwind CSS, Node.js, Express.js, and MongoDB.
-            Passionate about creating elegant UI and seamless user experiences.
+            Passionate about building modern web applications with React, Node.js, Express, and MongoDB, focusing on clean architecture, security, and user experience.
           </p>
 
           {/* Buttons */}
